@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body id="home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><img src="assets/logo.png" style="width: 20%;">Reservas GamaHotel</h1>
+            
+        </div>
+    </nav>
+
+    <section class="sectionMain">
+        <div class="container">
+            <div>
+                <h1><span style="color: #F7B733">Black</span> <span style="color: #4adbac">Friday</span></h1>
+                <p class="subInfo">Aproveite nossas ofertas!<br><span>Venha já conferir</span></p>
+                
+                <a href="#sectionPromo" class="btn">Clique aqui</a>
+            </div>
+            <img class="image-principal" src="assets/canoa.jpg" alt="imagem de Canoa Quebrada">
+        </div>
+    </section>
+
+    <section class="sectionSecondary" id="sectionPromo" style="background-image: url('assets/fundo.jpg');">
+        <div class="overlay">
+            <div class="sectionSecondary-inner">
+                <h2>Cadastre seu e-mail para receber as melhores ofertas</h2>
+            <div class="email-form">
+                <span class="form-control-wrap"> 
+                    <input type="email" id="email" size="40" class="form-control" placeholder="Email">
+                </span>
+                <button type="submit" class="form-control submit" onclick="handleShowMessageConfirmation()">Enviar</button>  
+            </div> 
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
